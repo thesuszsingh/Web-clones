@@ -1,0 +1,950 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/*NAV BAR*/
+nav {
+  position: relative;
+  max-height: 80px;
+  min-width: 320px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+nav img {
+  position: relative;
+  height: 60px;
+  max-width: 425px;
+  left: 20px;
+  top: 2px;
+}
+
+nav .search_bar {
+  position: absolute;
+  height: 50px;
+  max-width: 768px;
+  display: flex;
+  background-color: white;
+  left: 120px;
+  top: 6.5px;
+  border-radius: 20px;
+  z-index: 2;
+}
+
+nav .search_scope {
+  max-height: 50px;
+  min-width: 100px;
+  background-color: rgba(202, 194, 194, 0.377);
+  left: 1px;
+  border-radius: 20px;
+}
+
+nav .submit {
+  position: relative;
+  left: 600px;
+  border-radius: 3.5px 20px 20px 3.5px;
+  border: none;
+  background-color: rgb(165, 204, 219);
+  width: 80px;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+  transition: all;
+  animation-duration: 1.5s;
+}
+
+nav button img {
+  position: absolute;
+  height: 45px;
+  width: 45px;
+  left: 12px;
+}
+
+.textarea {
+  position: relative;
+  left: -55px;
+  outline: none;
+  border: none;
+  font-family: cursive;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1em;
+  width: 580px;
+}
+
+nav ul a {
+  position: relative;
+  left: 165px;
+  height: 50px;
+  font-size: 1.3rem;
+  text-decoration: none;
+  top: -22px;
+}
+
+.user {
+  position: relative;
+  left: 130px;
+  height: 30px;
+  top: 8px;
+}
+
+.search_scope h4 {
+  position: relative;
+  top: 15px;
+  left: 20px;
+}
+
+.search_scope img {
+  position: relative;
+  height: 15px;
+  left: 10px;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  overflow: scroll;
+  height: 300px;
+  margin-top: -15px;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: bolder;
+  overflow-x: hidden;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+nav .lang {
+  position: absolute;
+  left: 1070px;
+  max-height: 40px;
+  top: 18px;
+  border-radius: 10px;
+}
+
+.cart {
+  position: absolute;
+  left: 1170px;
+  max-height: 50px;
+  top: 14px;
+}
+
+
+.menu_bar {
+  position: relative;
+  display: inline-block;
+}
+
+menu .dropbtn {
+  rotate: 90deg;
+  z-index: 2;
+  position: absolute;
+  left: 1260px;
+  top: -70px;
+}
+
+menu .dropdown-content {
+  width: 550px;
+  height: 700px;
+  display: none;
+  position: absolute;
+  z-index: 2;
+  left: 800px;
+  top: -60px;
+  background-color: rgb(255, 255, 255);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.dropdown-content a {
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: bolder;
+  height: 60px;
+  padding-right: 80px;
+  font-size: 1.1rem;
+}
+
+.dropdown-content img{
+  left: -250px;
+  top: -0.5px;
+}
+.dropdown-content h3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  color: rgba(16, 196, 181, 0.89);
+}
+
+menu .arrow{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 420px;
+  width: 15px;
+  height: 15px;
+  border: 3px solid #ffffffc7;
+  border-left: 0;
+  border-top: 0;
+  transform: rotate(132.5deg);
+  margin: 0 40px 0 40px;
+
+}
+
+menu .arrow:hover{
+  
+  border-color: rgb(0, 0, 0);
+}
+
+section .background .img1 {
+  width: 100%;
+  filter: blur(3px);
+  position: fixed;
+  z-index: 0;
+}
+
+section .ad {
+  z-index: 1;
+  position: absolute;
+  height: 200px;
+  width: 100%;
+  margin-top: 30px;
+  background-color: rgba(54, 39, 39, 0.856);
+}
+
+/*BOX 1*/
+section .box1 {
+  height: 300px;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.65);
+  position: absolute;
+  top: 48%;
+  margin-left: 20px;
+  border-radius: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 15px;
+}
+
+section .foreground .box1 h3 {
+  position: relative;
+  left: 25px;
+  font-weight: bolder;
+}
+
+section .foreground .box1 .chair {
+  position: relative;
+  top: 15px;
+}
+
+section .foreground .box1 .keyboard {
+  position: relative;
+  top: 25px;
+}
+
+section .foreground .box1 .headphone {
+  position: relative;
+  top: -100px;
+  left: 10px;
+}
+
+section .foreground .box1 .mouse {
+  position: relative;
+  top: -80px;
+  left: 170px;
+}
+
+/*BOX 2*/
+section .box2 {
+  height: 300px;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.65);
+  position: absolute;
+  top: 48%;
+  margin-left: 350px;
+  border-radius: 20px;
+  padding: 15px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+section .foreground .box2 h3 {
+  position: relative;
+  left: 25px;
+  font-weight: bolder;
+}
+
+section .foreground .box2 .male {
+  position: relative;
+}
+
+section .foreground .box2 .female {
+  position: relative;
+  left: -10px;
+}
+
+/*BOX 3*/
+section .box3 {
+  height: 300px;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.65);
+  position: absolute;
+  top: 48%;
+  margin-left: 690px;
+  border-radius: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 15px;
+}
+
+section .foreground .box3 h3 {
+  position: relative;
+  left: 25px;
+  font-weight: bolder;
+}
+
+section .foreground .box3 .bedroom {
+  position: relative;
+  top: 20px;
+  border-radius: 10px;
+}
+
+section .foreground .box3 .product {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  border-radius: 10px;
+}
+
+section .foreground .box3 .kitchen {
+  position: relative;
+  top: 50px;
+  border-radius: 10px;
+}
+
+section .foreground .box3 .dinning {
+  position: relative;
+  top: 50px;
+  left: 20px;
+  border-radius: 10px;
+}
+
+/*BOX 4*/
+section .box4 {
+  height: 300px;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.65);
+  position: absolute;
+  top: 48%;
+  margin-left: 1030px;
+  border-radius: 20px;
+  padding: 15px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+section .foreground .box4 h3 {
+  position: relative;
+  left: 25px;
+  font-weight: bolder;
+}
+
+section .foreground .box4 .gym {
+  position: relative;
+  top: 20px;
+  left: -5px;
+}
+
+section .foreground .box4 .sport {
+  position: relative;
+  top: -80px;
+  left: 115px;
+}
+
+section .foreground .box4 .players {
+  position: relative;
+  top: -80px;
+}
+
+section .foreground .box4 .drugs {
+  position: relative;
+  top: -70px;
+  left: 5px;
+}
+
+.advt {
+  align-items: center;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  height: 280px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.66);
+  top: 600px;
+  overflow: hidden;
+}
+
+.advt h2 {
+  position: absolute;
+  top: -3px;
+  font-weight: bolder;
+  font-size: 1.9rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.box5 {
+  position: relative;
+  height: 240px;
+  width: 240px;
+  background-color: rgba(70, 69, 69, 0.767);
+  top: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.advt .box5 .set1 {
+  position: relative;
+  left: 40px;
+  top: -10px;
+  transition: 0.2s linear;
+}
+
+hr {
+  position: relative;
+  color: white;
+  height: 2px;
+  top: -10px;
+}
+
+.advt .box5 h5 {
+  color: white;
+  position: relative;
+  font-size: 1.1rem;
+  top: -10px;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box6 {
+  position: relative;
+  height: 240px;
+  width: 240px;
+  background-color: rgba(70, 69, 69, 0.767);
+  top: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.advt .box6 .set2 {
+  position: relative;
+  left: 30px;
+  top: -10px;
+  transition: 0.2s linear;
+}
+
+.advt .box6 h5 {
+  color: white;
+  position: relative;
+  font-size: 1.1rem;
+  top: -10px;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box7 {
+  position: relative;
+  height: 240px;
+  width: 240px;
+  background-color: rgba(70, 69, 69, 0.767);
+  top: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.advt .box7 h5 {
+  color: white;
+  position: relative;
+  font-size: 1.1rem;
+  top: -10px;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.advt .box7 .set3 {
+  position: relative;
+  left: 30px;
+  top: -1px;
+  transition: 0.2s linear;
+}
+
+.box8 {
+  position: relative;
+  height: 240px;
+  width: 240px;
+  background-color: rgba(70, 69, 69, 0.767);
+  top: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.advt .box8 h5 {
+  color: white;
+  position: relative;
+  font-size: 1.1rem;
+  top: -10px;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.advt .box8 .set4 {
+  position: relative;
+  left: 10px;
+  top: -1px;
+  transition: 0.2s linear;
+}
+
+.box9 {
+  position: relative;
+  height: 240px;
+  width: 240px;
+  background-color: rgba(70, 69, 69, 0.767);
+  top: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.advt .box9 h5 {
+  color: white;
+  position: relative;
+  font-size: 1.1rem;
+  top: -10px;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.advt .box9 .set5 {
+  position: relative;
+  left: 30px;
+  top: -1px;
+  transition: 0.2s linear;
+}
+
+main .main1{
+  position: relative;
+  height: 500px;
+  width: 100%;
+  background-color: rgba(51, 51, 51, 0.918);
+  top: 600px; 
+}
+main span{
+  filter: drop-shadow(1px 10px 10px black);
+}
+main span a{
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+ 
+}
+
+span .b1{
+  position: absolute;
+  height: 200px;
+  width: 210px;
+  margin: 10px 0 0 20px;
+ 
+
+}
+span .b2{
+  position: absolute;
+  height: 200px;
+  width: 210px;
+  margin: 10px 0 0 240px;
+
+
+ 
+}
+span .b3{
+  position: absolute;
+  height: 200px;
+  width: 210px;
+  margin: 10px 0 0 460px;
+
+}
+
+span .b4{
+  position: absolute;
+  height: 200px;
+  width: 210px;
+  margin: 10px 0 0 680px;
+ 
+
+}
+span .b5{
+  position: absolute;
+  height: 200px;
+  width: 210px;
+  margin: 10px 0 0 900px;
+
+
+}
+span .b6{
+  position: absolute;
+  height: 200px;
+  width: 210px;
+  margin: 10px 0 0 1120px;
+
+}
+aside{
+  position: relative;
+  top: 220px;
+  width: 100%;
+  background-color: rgb(20, 20, 20);
+  height: 55%;
+}
+
+aside legend summary{
+  color: rgb(255, 255, 255);
+  position: absolute;
+  margin-top: -35vh;
+  margin-left: 25vw;
+  word-wrap: break-word;
+  word-spacing: 2.5px;
+  text-align:start;
+  font-family: cursive;
+  font-weight: 500;
+
+}
+
+aside legend summary title{
+  color: white;
+  font-size: 1.5rem;
+}
+
+
+
+
+footer span h5{
+  top: 225vh;
+  position: absolute;
+  height: 60%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.979);
+  color: rgb(7, 162, 224);
+  text-decoration: none;
+  font-size: 1.7rem;
+  text-align: center;
+  font-stretch: expanded;
+  font-weight: bolder;
+}
+footer span h3{
+  position: absolute;
+  top: 240vh;
+  color: white;
+  text-indent: 10px;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+footer span p{
+  position: absolute;
+  top: 245vh;
+  color: white;
+  text-wrap: pretty;
+  text-decoration: none;
+  text-indent: 30px;
+  overflow-wrap: break-word;
+  font-size: 0.85rem;
+}
+footer hr{
+  
+  top: 670px;
+  color: white;
+}
+footer span h4{
+  position: absolute;
+  top: 271vh;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  text-indent: 10px;
+}
+footer em{
+  font-size: 1.1rem;
+  position: absolute;
+  top: 277vh;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-indent: 20px;
+} 
+footer form{
+  color: white;
+  position: absolute;
+  top: 275vh;
+  margin-left: 1200px;
+}
+footer form input{
+  border: none;
+  height: 15px;
+  width: 15px;
+  outline: 2px solid white;
+  outline-style: inset; 
+ outline-color: rgba(255, 254, 254, 0.527);
+ outline-offset: .8px;
+}
+footer form label{
+  font-size: 1.2rem;
+  margin: 0 0 20px 5px;
+  left: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*special effects*/
+.menu_bar:hover .dropdown-content {
+  display: block;
+}
+
+nav img:hover {
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+nav .search_bar:hover {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.767);
+}
+
+nav button:hover {
+  cursor: pointer;
+}
+
+@keyframes myAnim {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.3);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+nav ul a:hover {
+  background-color: rgba(126, 120, 120, 0.603);
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.search_scope:hover .dropdown-content {
+  display: block;
+}
+
+nav .lang:hover {
+  border: 2.5px solid white;
+  cursor: pointer;
+}
+
+/*box 1*/
+section .foreground .box1 .chair:hover {
+  cursor: pointer;
+  overflow: hidden;
+  border: 2px solid black;
+  border-radius: 20px;
+  transform: scale(1.1.5);
+  filter: drop-shadow(10px 10px 20px black);
+}
+
+section .foreground .box1 .keyboard:hover {
+  cursor: pointer;
+  overflow: hidden;
+  border: 2px solid black;
+  border-radius: 20px;
+  transform: scale(1.1.5);
+  filter: drop-shadow(10px 10px 20px black);
+}
+
+section .foreground .box1 .headphone:hover {
+  cursor: pointer;
+  overflow: hidden;
+  border: 2px solid black;
+  border-radius: 20px;
+  transform: scale(1.1.5);
+  filter: drop-shadow(10px 10px 20px black);
+}
+
+section .foreground .box1 .mouse:hover {
+  cursor: pointer;
+  overflow: hidden;
+  border: 2px solid black;
+  border-radius: 20px;
+  transform: scale(1.1.5);
+  filter: drop-shadow(10px 10px 20px black);
+}
+
+section .foreground .box2 .male:hover {
+  cursor: pointer;
+  overflow: hidden;
+  border: 2px solid black;
+  border-radius: 20px;
+  transform: scale(1.1.5);
+  filter: drop-shadow(10px 10px 20px black);
+}
+
+section .foreground .box2 .female:hover {
+  cursor: pointer;
+  overflow: hidden;
+  border: 2px solid black;
+  border-radius: 20px;
+  transform: scale(1.1.5);
+  filter: drop-shadow(10px 10px 20px black);
+}
+
+section .foreground .box3 .bedroom:hover {
+  cursor: pointer;
+  overflow: hidden;
+  border: 2px solid black;
+  border-radius: 20px;
+  transform: scale(1.1.5);
+  filter: drop-shadow(10px 10px 20px black);
+}
+
+section .foreground .box3 .product:hover {
+  cursor: pointer;
+  overflow: hidden;
+  border: 2px solid black;
+  border-radius: 20px;
+  transform: scale(1.1.5);
+  filter: drop-shadow(10px 10px 20px black);
+}
+
+section .foreground .box3 .kitchen:hover {
+  cursor: pointer;
+  overflow: hidden;
+  border: 2px solid black;
+  border-radius: 20px;
+  transform: scale(1.1.5);
+  filter: drop-shadow(10px 10px 20px black);
+}
+
+section .foreground .box3 .dinning:hover {
+  cursor: pointer;
+  overflow: hidden;
+  border: 2px solid black;
+  border-radius: 20px;
+  transform: scale(1.1.5);
+  filter: drop-shadow(10px 10px 20px black);
+}
+
+section .foreground .box4 .gym:hover {
+  cursor: pointer;
+  overflow: hidden;
+  border: 2px solid black;
+  border-radius: 20px;
+  transform: scale(1.1.5);
+  filter: drop-shadow(10px 10px 20px black);
+}
+
+section .foreground .box4 .sport:hover {
+  cursor: pointer;
+  overflow: hidden;
+  border: 2px solid black;
+  border-radius: 20px;
+  transform: scale(1.1.5);
+  filter: drop-shadow(10px 10px 20px black);
+}
+
+section .foreground .box4 .players:hover {
+  cursor: pointer;
+  overflow: hidden;
+  border: 2px solid black;
+  border-radius: 20px;
+  transform: scale(1.1.5);
+  filter: drop-shadow(10px 10px 20px black);
+}
+
+section .foreground .box4 .drugs:hover {
+  cursor: pointer;
+  overflow: hidden;
+  border: 2px solid black;
+  border-radius: 20px;
+  transform: scale(1.1.5);
+  filter: drop-shadow(10px 10px 20px black);
+}
+
+.advt .box5 .set1:hover {
+  scale: 1.1;
+}
+
+.advt .box6 .set2:hover {
+  scale: 1.1;
+}
+
+.advt .box7 .set3:hover {
+  scale: 1.1;
+}
+
+.advt .box8 .set4:hover {
+  scale: 1.05;
+}
+
+.advt .box9 .set5:hover {
+  scale: 1.05;
+}
+main .b1:active,.b2:active,.b3:active,.b4:active,.b5:active,.b6:active{
+  scale: 0.8;
+  transition: 0.1s linear;
+  filter: drop-shadow(10px 10px 20px black);
+}
